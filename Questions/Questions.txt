@@ -1,0 +1,83 @@
+Python Questions 
+
+     
+1. Identify the maximum and minimum values of the selling_price 
+column. 
+Calculate the average of these two values and use this average to 
+fill all missing values in selling_price. 
+2. Handle the km_driven and owner_count columns using an 
+appropriate real-world data-cleaning technique. 
+Justify the method used for each column based on data distribution 
+and practical usage. 
+3. For the km_category column, 50% of the missing values should be 
+filled with the most frequently occurring category. 
+The remaining 50% of missing values should be filled with the 
+value "High". 
+4. Fill missing values in the price_category column using the most 
+frequently occurring category in the dataset. 
+If it is not possible to determine whether the category is generated 
+manually or automatically, replace missing values with 
+"Unknown". 
+5. For the fuel column, distribute all missing values equally among 
+the existing unique fuel types. 
+Each unique fuel value must be assigned the same number of 
+missing records. 
+6. After completing all the data cleaning steps, split the final cleaned 
+dataset into two CSV files and export them.  
+First file => 
+Name it: vehicle_info 
+This file should contain only the following columns: 
+vehicle_uid, name, year, fuel, seller_type, transmission, owner, 
+brand, car_age, etc. 
+Second file=> 
+Name it: vehicle_sales 
+This file should contain only the following columns:  
+vehicle_uid, selling_price, km_driven, price_category, 
+km_category, etc. 
+Important Note: Both datasets should have the same file name 
+as mentioned in Question-6, else your answers will not be 
+evaluated.
+
+   
+SQL Questions
+
+      
+Q1. Show all vehicles that use Diesel fuel. 
+Q2. Display vehicle name, year, and brand for all vehicles. 
+Q3. Find all sales where selling price is below 5,00,000. 
+Q4. Find fuel types where average selling price is greater than 6,00,000. 
+Q5. Find brands that have more than 50 vehicles listed. 
+Q6. Show transmission types where the average selling price is greater 
+than 7,00,000 AND the total number of vehicles is at least 30. 
+Q7. Find price categories where the average km driven is above 75,000, 
+but only include categories that have more than 20 vehicles AND only 
+count Diesel vehicles. 
+Q8. Find vehicles whose selling price is higher than the overall average 
+selling price. 
+Q9. Find brands whose average selling price is greater than the average 
+selling price of Toyota vehicles. 
+Q10. Find fuel types where total selling price is higher than total selling 
+price of Petrol vehicles. 
+            
+      
+      
+      
+                   
+ML Evaluation      
+      
+   
+     
+     Q1. Load the cleaned Car Evaluation dataset. Identify the Type of 
+ML Problem. Select 'price_category' as target variable, and print the 
+shape of X and y.   
+Q2. Identify categorical columns, apply Encoding techniques (if 
+necessary), perform Standard Scaling on numerical features.    
+Q.3.Plot the distribution of car price categories. Analyse the relationship 
+between safety, selling price indicators, and number of owners or usage 
+(km driven) with the target variable price category 
+Q.4 Split the dataset into training and testing sets. Train a SVM model 
+and display accuracy Score, Confusion Matrix, Classification report.   
+Q.5. Train a Random Forest Classifier on the same data and predict 
+price_category, find - accuracy Score, Confusion Matrix, Classification 
+report. Compare both models accuracy and print the best model for 
+Prediction. 
